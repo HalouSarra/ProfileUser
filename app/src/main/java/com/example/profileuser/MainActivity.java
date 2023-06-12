@@ -16,15 +16,21 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewEmail;
     private TextView textViewPhone;
     private TextView  dcnct;
+    private TextView  type;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        type = findViewById(R.id.userType);
         dcnct = findViewById(R.id.deconnecte);
         textViewName = findViewById(R.id.userName);
         textViewEmail = findViewById(R.id.userEmail);
         textViewPhone = findViewById(R.id.userPhone);
         CircleImageView imgViewProfile = findViewById(R.id.imgview_profile);
+
+
 //        FirebaseFirestore db = FirebaseFirestore.getInstance();
 //        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid(); // Remplacez par l'ID réel de l'utilisateur
 //        db.collection("Users").document(userId).get()

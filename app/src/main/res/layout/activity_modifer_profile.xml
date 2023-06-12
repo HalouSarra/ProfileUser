@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModiferProfile">
+
+    <TextView
+        android:id="@+id/Modifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="40dp"
+        android:text="Informations Profile"
+        android:textColor="@color/blue1"
+        android:textColorHighlight="@color/blue2"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modifierEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/inpute_bg"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Nom d'utilisateur"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/Modifier"
+        app:layout_constraintStart_toStartOf="@+id/Modifier"
+        app:layout_constraintTop_toBottomOf="@+id/Modifier" />
+
+    <EditText
+        android:id="@+id/modifierPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/inpute_bg"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Numéro de téléphone"
+        android:inputType="phone"
+        android:text="+213"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/modifierEmail"
+        app:layout_constraintStart_toStartOf="@+id/modifierEmail"
+        app:layout_constraintTop_toBottomOf="@+id/modifierEmail" />
+
+    <Button
+        android:id="@+id/btnModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="Modifier"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/modifierPhone"
+        app:layout_constraintStart_toStartOf="@+id/modifierPhone"
+        app:layout_constraintTop_toBottomOf="@+id/modifierPhone" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

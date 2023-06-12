@@ -12,6 +12,9 @@
         android:theme="@style/Theme.ProfileUser"
         tools:targetApi="31">
         <activity
+            android:name=".ModiferProfile"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

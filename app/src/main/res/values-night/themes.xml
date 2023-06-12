@@ -6,7 +6,7 @@
                 <item name="colorPrimaryVariant">@color/blue2</item>
                 <item name="colorOnPrimary">@color/black</item>
                 <!-- Status bar color. -->
-                <item name="android:statusBarColor" tools:targetApi="21">?attr/colorOnPrimary</item>
+                <item name="android:statusBarColor" tools:targetApi="21">?attr/colorPrimary</item>
                 <!-- Customize your theme here. -->
                 <!--button-->
             </style>
