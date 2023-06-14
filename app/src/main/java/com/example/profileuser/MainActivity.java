@@ -2,10 +2,7 @@ package com.example.profileuser;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -28,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         textViewName = findViewById(R.id.userName);
         textViewEmail = findViewById(R.id.userEmail);
         textViewPhone = findViewById(R.id.userPhone);
-        CircleImageView imgViewProfile = findViewById(R.id.imgview_profile);
+        CircleImageView imgViewProfile = findViewById(R.id.imgview_blasti);
 
 
 //        FirebaseFirestore db = FirebaseFirestore.getInstance();
